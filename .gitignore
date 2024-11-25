@@ -36,3 +36,9 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/.idea/
+/.idea/
+/src/test/resources/apps/UIKitCatalog.app/
+/src/test/resources/apps/TestApp 3.app/
+/src/test/resources/apps/General-Store.apk
+/src/main/
