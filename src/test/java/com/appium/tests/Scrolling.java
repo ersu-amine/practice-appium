@@ -13,6 +13,7 @@ public class Scrolling extends BaseTest {
         driver.findElement(AppiumBy.accessibilityId("Views")).click();
         CommonLibrary.scrollIntoView("Visibility");
         //driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Visibility\"));"));
+
         Thread.sleep(2000);
     }
 }

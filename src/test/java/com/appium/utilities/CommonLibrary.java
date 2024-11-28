@@ -20,7 +20,7 @@ public class CommonLibrary extends BaseTest {
     }
 
     /**
-     * @param elementText scrolls until element text is in view
+     * @param elementText scrolls down until element text is in view
      */
     public static void scrollIntoView(String elementText) {
         driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + elementText + "\"));"));
