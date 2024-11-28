@@ -43,3 +43,4 @@ build/
 /src/test/resources/apps/General-Store.apk
 /src/main/
 /configuration.properties
+/src/test/resources/apps/ApiDemosDebug.apk
