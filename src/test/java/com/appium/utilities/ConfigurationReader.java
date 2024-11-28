@@ -2,7 +2,6 @@ package com.appium.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.security.InvalidParameterException;
 import java.text.MessageFormat;
 import java.util.Properties;
 
@@ -20,6 +19,7 @@ public class ConfigurationReader {
     }
 
     public static String getProperty(String key){
+        //throw exception for non-existing or incorrect key
         if(properties.getProperty(key) == null) {
             throw new NullPointerException(MessageFormat.format("Key {0} does not exist or value is null", key));
         }
