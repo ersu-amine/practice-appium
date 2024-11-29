@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 
 public class AppiumBasics extends BaseTest {
 
-
     @Test
     public void setWifiName() {
 
@@ -22,7 +21,7 @@ public class AppiumBasics extends BaseTest {
         //tap on checkbox
         driver.findElement(AppiumBy.id("android:id/checkbox")).click();
 
-        //tap wifi settings, can generate xpath with tagname
+        //tap wifi settings, can generate xpath with tag name
         driver.findElement(By.xpath("(//android.widget.RelativeLayout)[2]")).click();
 
         String alertTitle = driver.findElement(By.id("android:id/alertTitle")).getText();
@@ -32,10 +31,10 @@ public class AppiumBasics extends BaseTest {
         driver.findElement(By.id("android:id/edit")).sendKeys("WifiName");
 
         //tap OK button, find using class name, recommended to use AppiumBy
+        //getting second element
         driver.findElements(AppiumBy.className("android.widget.Button")).get(1).click();
 
-
-
-
+        //assert if title matching
+        Assert.assertEquals("Sample menu", driver.findElement(By.id("android:id/title")).getText());
     }
 }

@@ -20,18 +20,14 @@ public class BaseTest {
 
     @BeforeClass
     public static void setUpAppium() throws URISyntaxException, MalformedURLException {
-        //AndroidDriver, IOSDriver
         service = new AppiumServiceBuilder().withAppiumJS(new File("/Users/michealthonton/.npm-global/lib/node_modules/appium/build/lib/main.js")).withIPAddress("127.0.0.1").usingPort(4723).build(); //http not required when giving as IP
-        //AppiumDriverLocalService build = service.build();
-        //build.start();
         service.start();
 
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("Pixel 9 API 35");
-        options.setApp("/Users/michealthonton/IdeaProjects/cucumber-appium/src/test/resources/apps/ApiDemos-debug.apk");
+        options.setApp("/Users/michealthonton/IdeaProjects/cucumber-appium/src/test/resources/apps/ApiDemosDebug.apk");
 
         driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
