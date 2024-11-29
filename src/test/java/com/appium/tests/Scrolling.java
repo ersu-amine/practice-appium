@@ -8,12 +8,19 @@ import org.junit.Test;
 public class Scrolling extends BaseTest {
 
     @Test
-    public void scrollingWithJS() throws InterruptedException {
+    public void scrollingWithUIAutomator() {
 
         driver.findElement(AppiumBy.accessibilityId("Views")).click();
         CommonLibrary.scrollIntoView("Visibility");
         //driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Visibility\"));"));
+    }
 
-        Thread.sleep(2000);
+    @DisplayName
+    @Test
+    public void scrollingWithJS() {
+
+        driver.findElement(AppiumBy.accessibilityId("Views")).click();
+        CommonLibrary.scrollIntoView("Visibility");
+        //driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Visibility\"));"));
     }
 }

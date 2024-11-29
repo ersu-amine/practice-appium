@@ -13,9 +13,9 @@ import org.openqa.selenium.remote.RemoteWebElement;
 
 public class LongPress extends BaseTest {
 
-
+    @DisplayName("nkjjhjkkjjopl")
     @Test
-    public void longPressGesture() throws InterruptedException {
+    public void longPressGesture() {
 
         driver.findElement(AppiumBy.accessibilityId("Views")).click();
         driver.findElement(AppiumBy.accessibilityId("Expandable Lists")).click();
