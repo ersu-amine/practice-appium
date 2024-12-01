@@ -13,7 +13,6 @@ import org.openqa.selenium.remote.RemoteWebElement;
 
 public class LongPress extends BaseTest {
 
-    @DisplayName("nkjjhjkkjjopl")
     @Test
     public void longPressGesture() {
 
@@ -24,7 +23,5 @@ public class LongPress extends BaseTest {
         WebElement element = driver.findElement(By.xpath("//android.widget.TextView[@text='People Names']"));
 
         CommonLibrary.longPress(element);
-
-
     }
 }

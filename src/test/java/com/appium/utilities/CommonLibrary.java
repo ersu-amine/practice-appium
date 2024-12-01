@@ -25,4 +25,18 @@ public class CommonLibrary extends BaseTest {
     public static void scrollIntoView(String elementText) {
         driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + elementText + "\"));"));
     }
+
+    /**
+     * scrolls until the end of page
+     */
+    public static void scrollWithJS() {
+        //TODO implement direction parameter
+        boolean canScrollMore;
+        do {
+            canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap.of(
+                    "left", 100, "top", 100, "width", 200, "height", 200,
+                    "direction", "down",
+                    "percent", 3.0));
+        }while(canScrollMore);
+    }
 }
