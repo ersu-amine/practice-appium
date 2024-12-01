@@ -39,4 +39,13 @@ public class CommonLibrary extends BaseTest {
                     "percent", 3.0));
         }while(canScrollMore);
     }
+
+    public static void swipe(WebElement element, String direction){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("mobile: swipeGesture", ImmutableMap.of(
+                "elementId", ((RemoteWebElement) element).getId(),
+                "direction", "direction",
+                "percent", 0.75
+        ));
+    }
 }
