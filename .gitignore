@@ -44,3 +44,4 @@ build/
 /src/main/
 /configuration.properties
 /src/test/resources/apps/ApiDemosDebug.apk
+/logs/
