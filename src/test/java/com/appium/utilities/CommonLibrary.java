@@ -40,12 +40,32 @@ public class CommonLibrary extends BaseTest {
         }while(canScrollMore);
     }
 
+    /**
+     *
+     * @param element Webelement to perform swiper action from
+     * @param direction of swipe action -> up, down,left, right
+     */
     public static void swipe(WebElement element, String direction){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("mobile: swipeGesture", ImmutableMap.of(
                 "elementId", ((RemoteWebElement) element).getId(),
-                "direction", "direction",
+                "direction", direction,
                 "percent", 0.75
+        ));
+    }
+
+    /**
+     *
+     * @param element source element to be dragged
+     * @param xCoordinate target x coordinate
+     * @param yCoordinate target y coordinate
+     */
+    public static void dragDropByCoordinates(WebElement element, int xCoordinate, int yCoordinate){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("mobile: dragGesture", ImmutableMap.of(
+                "elementId", ((RemoteWebElement) element).getId(),
+                "endX", xCoordinate,
+                "endY", yCoordinate
         ));
     }
 }

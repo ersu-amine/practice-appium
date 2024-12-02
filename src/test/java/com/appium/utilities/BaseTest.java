@@ -1,5 +1,6 @@
 package com.appium.utilities;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -32,8 +33,8 @@ public class BaseTest {
     }
 
     @AfterClass
-    public static void tearDown(){
-
+    public static void tearDown() throws InterruptedException {
+        Thread.sleep(2000);
         driver.quit();
         service.stop();
     }
