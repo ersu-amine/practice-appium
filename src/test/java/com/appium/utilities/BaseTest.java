@@ -7,7 +7,6 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URI;
