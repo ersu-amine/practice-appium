@@ -68,4 +68,11 @@ public class CommonLibrary extends BaseTest {
                 "endY", yCoordinate
         ));
     }
+
+    public static void beginActivity(String activity){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("mobile: startActivity", ImmutableMap.of(
+                "intent", activity
+        ));
+    }
 }

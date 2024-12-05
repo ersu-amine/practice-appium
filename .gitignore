@@ -45,3 +45,4 @@ build/
 /configuration.properties
 /src/test/resources/apps/ApiDemosDebug.apk
 /logs/
+/src/test/resources/apps/commands.txt
