@@ -1,14 +1,12 @@
-package com.appium.tests;
+package com.appium.tests.basic;
 
 import com.appium.utilities.BaseTest;
 import com.appium.utilities.CommonLibrary;
-import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 public class Swipe extends BaseTest {

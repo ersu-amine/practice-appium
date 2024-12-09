@@ -1,11 +1,9 @@
-package com.appium.tests;
+package com.appium.tests.basic;
 
 import com.appium.utilities.BaseTest;
 import com.appium.utilities.CommonLibrary;
-import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import org.junit.Test;
-import org.openqa.selenium.JavascriptExecutor;
 
 public class Scrolling extends BaseTest {
 

@@ -1,11 +1,9 @@
-package com.appium.tests;
+package com.appium.tests.basic;
 
 import com.appium.utilities.BaseTest;
 import io.appium.java_client.AppiumBy;
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.ScreenOrientation;
 
 public class CopyToClipboard extends BaseTest {
 
