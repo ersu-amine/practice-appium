@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 import java.util.List;
+import java.util.Set;
 
 public class ECommerceUtils extends ECommerceAppBase{
     /**
@@ -45,6 +46,13 @@ public class ECommerceUtils extends ECommerceAppBase{
 
         js.executeScript("mobile: longClickGesture", ImmutableMap.of(
                 "elementId", ((RemoteWebElement) element).getId(), "duration", 2000));
+    }
+
+    public static void displayContextHandle(){
+        Set<String> contextHandles = driver.getContextHandles();
+        for (String handle : contextHandles) {
+            System.out.println(handle);
+        }
     }
 
 }
