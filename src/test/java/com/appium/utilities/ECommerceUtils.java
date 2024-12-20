@@ -26,4 +26,11 @@ public class ECommerceUtils extends ECommerceAppBase{
         return index; //no index 0 in xpath
     }
 
+    public static double formatPrice(WebElement price){
+        //remove dollar sign
+        String str = price.getText().substring(1);
+        //convert str to double
+        return Double.parseDouble(str);
+    }
+
 }
