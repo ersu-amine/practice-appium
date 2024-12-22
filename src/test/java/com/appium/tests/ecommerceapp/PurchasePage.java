@@ -69,10 +69,12 @@ public class PurchasePage  extends ECommerceAppBase {
         //web automation, google has search bar with attribute name=q
         //must set chromedriver to automate web browser
         driver.findElement(By.name("q")).sendKeys("pigment of reality" + Keys.ENTER);
+        Thread.sleep(3000);
         //navigate back to mobile app
         driver.pressKey(new KeyEvent(AndroidKey.BACK));
         //change context
         driver.context("NATIVE_APP");
+
 
     }
 }
