@@ -25,6 +25,7 @@ public class ECommerceAppBase {
 
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("Pixel 9 API 35");
+        options.setChromedriverExecutable("/Users/michealthonton/Documents/chromedriver-mac-x64/chromedriver");
         options.setApp("/Users/michealthonton/IdeaProjects/cucumber-appium/src/test/resources/apps/General-Store.apk");
 
         driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
