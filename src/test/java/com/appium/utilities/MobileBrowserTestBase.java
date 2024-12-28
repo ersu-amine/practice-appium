@@ -13,7 +13,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.Duration;
 
-public class MobileBrowserTestBase extends CommonLibrary{
+public class MobileBrowserTestBase{
 
     public static AppiumDriverLocalService service;
     public static AndroidDriver driver;
