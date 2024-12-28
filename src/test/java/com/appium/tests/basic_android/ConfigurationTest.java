@@ -1,4 +1,4 @@
-package com.appium.tests.basic;
+package com.appium.tests.basic_android;
 
 import com.appium.utilities.ConfigurationReader;
 import org.junit.Test;

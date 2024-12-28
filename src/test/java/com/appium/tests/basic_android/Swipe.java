@@ -1,4 +1,4 @@
-package com.appium.tests.basic;
+package com.appium.tests.basic_android;
 
 import com.appium.utilities.BaseTest;
 import com.appium.utilities.CommonLibrary;
