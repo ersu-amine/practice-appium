@@ -77,7 +77,5 @@ public class CommonLibrary extends BaseTest {
         ));
     }
 
-    public static void confirmPageTitle(String expectedTitle){
-        Assert.assertEquals(expectedTitle,driver.getTitle());
-    }
+
 }
